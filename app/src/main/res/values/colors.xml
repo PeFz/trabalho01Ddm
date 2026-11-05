@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Santuário Botânico (Fiel ao Protótipo) -->
+    <color name="bg_cream">#F6F3EC</color>
+    <color name="surface_white">#FFFFFF</color>
+    <color name="surface_warm">#F2EDE4</color>
+    <color name="surface_warm_dark">#E6DFD3</color>
+
+    <color name="green_primary">#1D4732</color>
+    <color name="green_primary_dark">#143323</color>
+    <color name="green_secondary">#2E6B4C</color>
+    <color name="green_sage_bg">#E3EDE6</color>
+    <color name="green_mint_bg">#EAF3EE</color>
+
+    <color name="terracotta_primary">#9B4528</color>
+    <color name="terracotta_dark">#7D351D</color>
+    <color name="terracotta_peach_bg">#FBE8E1</color>
+    <color name="terracotta_peach_border">#F2CFC2</color>
+
+    <color name="urgent_red">#B8332A</color>
+    <color name="urgent_red_bg">#FDECEA</color>
+    <color name="healthy_green">#2E6F40</color>
+    <color name="warning_amber">#C87A28</color>
+
+    <color name="text_primary">#1A261F</color>
+    <color name="text_secondary">#657069</color>
+    <color name="text_muted">#8C9690</color>
+    <color name="divider_color">#E5DFD5</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
+

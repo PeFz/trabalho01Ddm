@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Fundo quente de janela -->
+    <path android:fillColor="#F5EFE6" android:pathData="M0,0h120v120h-120z"/>
+    <path android:fillColor="#E7DEC8" android:pathData="M0,86h120v34h-120z"/>
+    <!-- Vaso rústico baixo -->
+    <path android:fillColor="#D4C5B1" android:pathData="M34,70h52l-6,28h-40z"/>
+    <!-- Corpo globoso do Cacto Ouriço -->
+    <path android:fillColor="#2E6B4C" android:pathData="M60,30 C40,30 34,50 38,70 L82,70 C86,50 80,30 60,30 Z"/>
+    <path android:fillColor="#3F8562" android:pathData="M60,30 C48,30 44,50 46,70 L74,70 C76,50 72,30 60,30 Z"/>
+    <path android:fillColor="#1D4732" android:pathData="M59,30h2v40h-2z"/>
+    <!-- Coroa dourada de espinhos no topo -->
+    <path android:fillColor="#D9A441" android:pathData="M52,28 C56,24 64,24 68,28 C64,32 56,32 52,28 Z"/>
+</vector>
+

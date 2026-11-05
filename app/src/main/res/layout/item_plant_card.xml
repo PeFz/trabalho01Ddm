@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardPlantRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="14dp"
+    android:background="@drawable/bg_card_white"
+    android:orientation="vertical"
+    android:padding="14dp">
+
+    <!-- Parte superior do card: Imagem + Dados principais -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Foto da Planta com Badge de Status no canto superior esquerdo -->
+        <FrameLayout
+            android:layout_width="86dp"
+            android:layout_height="92dp"
+            android:layout_marginEnd="12dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="82dp"
+                android:layout_height="88dp"
+                android:layout_gravity="bottom|end"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/ivPlantThumb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img_plant_monstera" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvOverlayBadge"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="top|start"
+                android:background="@drawable/bg_circle_urgent"
+                android:gravity="center"
+                android:text="!"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <!-- Coluna de Informações da Planta -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Linha 1: Cômodo + Frequência -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPlantRoom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🛋️ Sala de estar"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvPlantFrequency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_card_warm"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="3dp"
+                    android:text="a cada 6 dias"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Nome Popular e Nome Científico -->
+            <TextView
+                android:id="@+id/tvPlantName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:fontFamily="serif"
+                android:text="Costela-de-Adão"
+                android:textColor="@color/text_primary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPlantScientific"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monstera deliciosa"
+                android:textColor="@color/text_secondary"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <!-- Status de Hidratação + Porcentagem -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvHydrationStatus"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Necessita de água hoje!"
+                    android:textColor="@color/terracotta_primary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHydrationPercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15%"
+                    android:textColor="@color/text_primary"
+                    android:textSize="11sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Barra de Progresso de Hidratação -->
+            <ProgressBar
+                android:id="@+id/pbHydration"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginTop="5dp"
+                android:max="100"
+                android:progress="15"
+                android:progressDrawable="@drawable/progress_hydration_urgent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Divisor sutil -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="10dp"
+        android:background="@color/divider_color" />
+
+    <!-- Rodapé do Card: Status do Solo + Botão Regar Agora / Marcar Regada -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSoilStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Solo quase seco"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btnWaterAction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pill_terracotta_filled"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="8dp"
+            android:text="💧 Regar Agora"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>
+

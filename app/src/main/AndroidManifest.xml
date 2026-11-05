@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissão de Internet para consumo de API REST via Retrofit -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permissão de Câmera para capturar foto da planta -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <!-- Sensor de luminosidade para medir a luz do cômodo -->
+    <uses-feature
+        android:name="android.hardware.sensor.light"
+        android:required="false" />
+
+    <!-- Permissões para Serviço em Background e Notificações de Rega -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_plant_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_plant_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PlantCare"
+        tools:targetApi="34">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Serviço em Background para monitorar plantas que precisam de rega -->
+        <service
+            android:name=".service.WateringReminderService"
+            android:enabled="true"
+            android:exported="false" />
+
+    </application>
+
+</manifest>
+

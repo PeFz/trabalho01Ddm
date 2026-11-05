@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PlantCare</string>
+    <string name="nav_my_plants">Minhas Plantas</string>
+    <string name="nav_add_explore">Explorar/Adicionar</string>
+    <string name="nav_sensor_weather">Sensor &amp; Clima</string>
+    <string name="nav_settings">Configurações</string>
+</resources>
+

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_cream"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_pill_sage"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="4dp"
+            android:text="📚 Enciclopédia &amp; Catálogo Botânico"
+            android:textColor="@color/green_primary"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="serif"
+            android:text="Catálogo de Espécies"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Explore variedades botânicas com parâmetros calibrados e toque em '+ Cadastrar' para preencher o formulário automaticamente."
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <!-- AutoCompleteTextView para filtrar o catálogo -->
+        <AutoCompleteTextView
+            android:id="@+id/actvCatalogSearch"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/bg_card_white"
+            android:completionThreshold="1"
+            android:hint="🔍 Buscar espécie por nome popular ou científico..."
+            android:paddingHorizontal="14dp"
+            android:singleLine="true"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_muted"
+            android:textSize="13sp" />
+
+        <!-- RecyclerView #4: Catálogo de Espécies -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCatalogSpecies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:nestedScrollingEnabled="false" />
+
+        <!-- Seção extra com ListView + Adapter (cumprindo explicitamente o requisito de ListView e Adapter também!) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_card_white"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:text="Regras de Ouro do Jardineiro"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="Toque em uma dica da lista para visualizar a orientação completa:"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp" />
+
+            <ListView
+                android:id="@+id/lvGardeningRules"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:divider="@color/divider_color"
+                android:dividerHeight="1dp"
+                android:nestedScrollingEnabled="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
+

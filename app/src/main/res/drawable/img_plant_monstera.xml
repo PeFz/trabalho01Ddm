@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Fundo suave de sala iluminada -->
+    <path android:fillColor="#EAE4D7" android:pathData="M0,0h120v120h-120z"/>
+    <path android:fillColor="#DFD7C6" android:pathData="M0,88h120v32h-120z"/>
+    <!-- Vaso de cerâmica terracota/bege -->
+    <path android:fillColor="#C58B6B" android:pathData="M42,74h36l-5,30h-26z"/>
+    <path android:fillColor="#B07657" android:pathData="M39,70h42v6h-42z"/>
+    <!-- Caule -->
+    <path android:fillColor="#1D4732" android:pathData="M58,42h4v32h-4z"/>
+    <!-- Folhas de Costela-de-Adão (Monstera) -->
+    <path android:fillColor="#1D4732" android:pathData="M60,48 C35,45 22,28 32,16 C40,10 55,22 60,48 Z"/>
+    <path android:fillColor="#2E6B4C" android:pathData="M60,44 C85,40 98,24 86,14 C75,8 63,20 60,44 Z"/>
+    <path android:fillColor="#25593E" android:pathData="M60,60 C32,64 20,50 26,38 C34,30 50,42 60,60 Z"/>
+    <path android:fillColor="#367B58" android:pathData="M60,58 C88,62 96,46 90,34 C82,28 68,40 60,58 Z"/>
+    <!-- Recortes típicos da Monstera -->
+    <path android:fillColor="#EAE4D7" android:pathData="M36,24h8v3h-8zM80,22h8v3h-8zM30,44h7v3h-7zM82,42h7v3h-7z"/>
+</vector>
+

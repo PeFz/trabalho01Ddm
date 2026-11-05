@@ -1,0 +1,18 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Fundo botânico claro -->
+    <path android:fillColor="#EEF3EE" android:pathData="M0,0h120v120h-120z"/>
+    <path android:fillColor="#DEE7DE" android:pathData="M0,88h120v32h-120z"/>
+    <!-- Vaso suspenso / cachepô -->
+    <path android:fillColor="#D8C8B4" android:pathData="M40,56h40l-5,28h-30z"/>
+    <!-- Folhas pendentes de Jiboia (Epipremnum aureum) -->
+    <path android:fillColor="#2E6B4C" android:pathData="M60,56 C40,34 30,22 44,16 C56,16 62,36 60,56 Z"/>
+    <path android:fillColor="#4E9B73" android:pathData="M60,56 C80,34 90,22 76,16 C64,16 58,36 60,56 Z"/>
+    <path android:fillColor="#1D4732" android:pathData="M48,66 C34,74 28,92 38,98 C48,94 52,78 48,66 Z"/>
+    <path android:fillColor="#3D8560" android:pathData="M72,66 C86,74 92,92 82,98 C72,94 68,78 72,66 Z"/>
+    <path android:fillColor="#8BC34A" android:pathData="M60,62 C52,78 52,98 60,106 C68,98 68,78 60,62 Z"/>
+</vector>
+

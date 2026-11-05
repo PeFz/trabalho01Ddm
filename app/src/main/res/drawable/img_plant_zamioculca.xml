@@ -1,0 +1,21 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+    <!-- Fundo suave de escritório -->
+    <path android:fillColor="#EBF0EC" android:pathData="M0,0h120v120h-120z"/>
+    <path android:fillColor="#DCE3DE" android:pathData="M0,90h120v30h-120z"/>
+    <!-- Vaso moderno branco/creme -->
+    <path android:fillColor="#FAF8F5" android:pathData="M44,72h32l-4,32h-24z"/>
+    <path android:fillColor="#E5DFD5" android:pathData="M42,68h36v5h-36z"/>
+    <!-- Hastes verticais de Zamioculca -->
+    <path android:fillColor="#1D4732" android:pathData="M53,20h3v52h-3zM64,16h3v56h-3zM45,32h3v40h-3zM73,28h3v44h-3z"/>
+    <!-- Pares de folíolos brilhantes -->
+    <path android:fillColor="#2E6B4C" android:pathData="M53,26 C42,22 42,32 53,32 Z M56,26 C66,22 66,32 56,32 Z"/>
+    <path android:fillColor="#1D4732" android:pathData="M53,40 C40,36 40,46 53,46 Z M56,40 C66,36 66,46 56,46 Z"/>
+    <path android:fillColor="#367B58" android:pathData="M64,22 C54,18 54,28 64,28 Z M67,22 C78,18 78,28 67,28 Z"/>
+    <path android:fillColor="#25593E" android:pathData="M64,36 C54,32 54,42 64,42 Z M67,36 C80,32 80,42 67,42 Z"/>
+    <path android:fillColor="#2E6B4C" android:pathData="M73,46 C86,42 86,52 73,52 Z M45,48 C32,44 32,54 45,54 Z"/>
+</vector>
+
